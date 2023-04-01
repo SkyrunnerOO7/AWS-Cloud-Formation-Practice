@@ -1,0 +1,11 @@
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-04581fbf744a7d11f
+      Tags:
+        - Key: "Name"
+          Value: !Join ["-",[My, First, Instance, on, Cloudformation]]
+
+          
